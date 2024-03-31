@@ -5,9 +5,22 @@ This guide is about building a python environment for Real3D-Portrait with Conda
 
 The following installation process is verified in A100/V100 + CUDA11.7.
 
+# 0. Install Conda
+https://docs.anaconda.com/free/anaconda/install/linux/
+
+
+ Add conda to path (for ease of use)
+ open .bashrc file on ~/.bashrc with nano and add this line to end of file with ctrl-o and enter and ctrl+x to exit
+
+ export PATH=~/anaconda3/bin:$PATH
 
 # 1. Install CUDA
- We recommend to install CUDA `11.7` (which is verified in various types of GPUs), but other CUDA versions (such as `10.2`, `12.x`) may also work well. 
+ We recommend to install CUDA `11.7` (which is verified in various types of GPUs), but other CUDA versions (such as `10.2`, `12.x`) may also work well. https://developer.nvidia.com/cuda-11-7-0-download-archive
+
+ Add cuda libs to path (or get faceslap errors)
+ open .bashrc file on ~/.bashrc with nano and add this line to end of file save with ctrl-o and enter and ctrl+x to exit
+ 
+ export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 
 # 2. Install Python Packages
 ```

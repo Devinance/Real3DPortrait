@@ -73,3 +73,8 @@ setproctitle
 # Gradio GUI
 httpx==0.23.3
 gradio==4.16.0
+
+
+# Discovered needed packages while testing (lol)
+pip install lit==18.1.2
+pip install cmake==3.29.0.1
