@@ -76,5 +76,5 @@ gradio==4.16.0
 
 
 # Discovered needed packages while testing (lol)
-install lit==18.1.2
-install cmake==3.29.0.1
+lit==18.1.2
+cmake==3.29.0.1
